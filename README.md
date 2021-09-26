@@ -1,3 +1,12 @@
+# This Is My Code Link Need To Click And Check My Github Assinment Code
+https://github.com/ProgrammingHeroWC4/the-superhero-direction-Mahbub1996
+
+# you click add cart button and show count number and different name
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

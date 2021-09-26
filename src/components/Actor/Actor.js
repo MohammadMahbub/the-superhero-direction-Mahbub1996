@@ -6,6 +6,8 @@ const Actor = () => {
 
 const [person, setPerson]=useState([])
 const [total, setTotal]=useState([])
+const [count,setCount] = useState(0)
+const [details, setDetails] = useState([])
 
 useEffect(()=>{
     fetch('./actor.json')
@@ -13,10 +15,8 @@ useEffect(()=>{
     .then(data => setPerson(data))
 }, [])
 
-const handleAddToCart = (person)=>{
-    const newTotal = [...total, person]
-    setTotal(newTotal)
-}
+
+console.log(count, details);
 
     return (
         <div>
@@ -31,7 +31,10 @@ const handleAddToCart = (person)=>{
                         person.map(person=><Person
                             key={person.key}
                             person={person}
-                            handleAddToCart = {handleAddToCart}
+                            total = {count} 
+                            setTotal = {setCount}
+                            details = {details}
+                            setDetails = {setDetails}
                         ></Person>)
                     }
                   </div>
@@ -42,7 +45,8 @@ const handleAddToCart = (person)=>{
                 <div className="col-md-3">
                     {/* here cart total calling */}
                         <Total 
-                        person ={person}
+                        details ={details}
+                        count = {count}
                         ></Total>
                 </div>
 
