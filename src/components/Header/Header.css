@@ -1,0 +1,23 @@
+.header{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    padding: 5px;
+}
+
+.header h2{
+    color: rgb(182, 26, 26);
+}
+.header p{
+    color: darkgray;
+}
+.top-actor{
+    color: rgb(209, 247, 40);
+    font-size: 22px;
+}
+.header h3 {
+    color: lightblue;
+}
+.actor-person{
+    color: rgb(72, 255, 102);
+}
